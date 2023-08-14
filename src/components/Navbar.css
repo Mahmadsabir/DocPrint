@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.nav{
+    background-color: rgb(9, 9, 112);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap :25%;
+}
+
+.landt{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.landt .icon1{
+    font-size: small;
+    color: rgb(247, 247, 247);
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+
+.landt .icon1:hover{
+    border-color: black;
+    border-radius: 1rem;
+    font-size: small;
+    border-radius: 50%;
+    color: rgb(116, 169, 135);
+
+}
+
+.landt .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+.nav h2{
+    font-size: 1.5rem;
+}
+
+.nav a{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: .25rem;
+    height: 1.5rem;
+}
+
+.nav ul{  
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem ;
+    color: inherit;
+
+}
+
+.nav li.active{
+    background-color: rgb(230, 194, 147);
+    border-radius: .2rem;
+}
+.nav li:hover{
+    background-color: rgb(49, 29, 158);
+    border-radius: .2rem;
+}
+
