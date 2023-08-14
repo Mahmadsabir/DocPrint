@@ -3,7 +3,7 @@ import React from 'react'
 function LeftSlide() {
   return (
     <div>
-      <h1>This is left Slide BAR</h1>
+      <h1>This is left SLIDE BAR</h1>
     </div>
   )
 }
