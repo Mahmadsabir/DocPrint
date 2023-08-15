@@ -1,26 +1,29 @@
 import "./Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom"; //we have imported browserRouter in index.js file
 import DehazeRoundedIcon from '@mui/icons-material/DehazeRounded';
-
-
+import LoginButton from "./LoginButton";
+import SignInButton from "./SignInButton";
 
 export default function Navbar() {
   return (
 
       <nav className="nav">
         <div className="landt">
-          <div className="icon1"> 
+          <div className="logo"> 
           <Link to="/LeftSlide">< DehazeRoundedIcon /></Link>
           </div>
-          <Link to="/" className="logo"> Doc-Print</Link>
+          <div className="title"><Link to="/"> Doc-Print</Link></div>
         </div>
-        <ul>
+        <div className="list">
           <CustomLink to="/Home">Home</CustomLink>
           <CustomLink to="/About">About</CustomLink>
-          <CustomLink to="/Contact">Contact Us</CustomLink>
+          <CustomLink to="/Contact">Contact</CustomLink>
           <CustomLink to="/Shop">Shop</CustomLink>
           <CustomLink to="/Repair">Repair</CustomLink>
-        </ul>
+          <LoginButton/>
+          <SignInButton/>
+          <div className="left-logo"> <DehazeRoundedIcon /></div>
+        </div>
       </nav>
   );
 }

@@ -8,12 +8,16 @@ body{
 }
 
 .nav{
+    height: 75px;
+    width: 100%;
     background-color: rgb(9, 9, 112);
     color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
+    display: flex; /* childern comes in single line */
+    align-items: center; /* */
+    padding : 0 3vw 0 2vw;
     gap :25%;
+    border-bottom: 2px solid #fbfbfb;
+    justify-content: space-between;
 }
 
 .landt{
@@ -21,36 +25,27 @@ body{
     display: flex;
     gap: 1rem;
 }
-.landt .icon1{
-    font-size: small;
-    color: rgb(247, 247, 247);
-    height: 50px;
-    align-items: center;
-    display: flex;
-}
 
-
-.landt .icon1:hover{
-    border-color: black;
-    border-radius: 1rem;
-    font-size: small;
-    border-radius: 50%;
-    color: rgb(116, 169, 135);
-
+.landt .title{
+    font-size: 2.3vw;
+    font-weight: 700;
+    color: rgb(232, 172, 4);
 }
 
 .landt .logo{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
+    color: rgb(247, 247, 247);
+    align-items: center;
+    display: flex;
+    font-weight: 800;
+}
+
+.landt .logo:hover{
+    border-radius: 1rem;
+    border-radius: 50%;
 }
 
 
 
-
-.nav h2{
-    font-size: 1.5rem;
-}
 
 .nav a{
     color: inherit;
@@ -58,17 +53,16 @@ body{
     display: flex;
     align-items: center;
     height: 100%;
-    padding: .25rem;
-    height: 1.5rem;
+    padding: .25vw;
 }
 
-.nav ul{  
+.nav .list{  
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 2rem ;
+    gap: 2vw;
     color: inherit;
-
+    font-size: 1vw;
 }
 
 .nav li.active{
@@ -80,3 +74,32 @@ body{
     border-radius: .2rem;
 }
 
+.nav .list .left-logo{
+    display: none;
+}
+
+/* .content{
+    width: 100%;
+    height: 800px;
+    background-color: blanchedalmond;
+} */
+
+@media (max-width: 600px){
+    .nav{
+        height: 60px;
+       padding: 2vw 0 0 5vw ;
+    }
+    .landt .title{
+        font-size: 3vw;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+    }
+    .nav .list a{
+        display: none;
+    }
+    .nav .list .left-logo{
+        display: block;
+        padding-right: 3.5vw ;
+    }
+    
+}
